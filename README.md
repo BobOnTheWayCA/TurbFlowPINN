@@ -167,7 +167,7 @@ The visualization includes both **forward** and **reverse** flow modes, demonstr
 ## **Credits**
 
 - **Data Collected From**: OpenFOAM Simulations  
-- **Visualization Software**: PyQt and PyVista  
+- **Visualization Software**: ParaView, PyQt and PyVista  
 - **Simulation Environment**: Docker Containers  
 - **3D Model Sources**: GrabCAD and Sketchfab Contributors  
 - **Boeing 737 MAX 8**: © *The Boeing Company*  
