@@ -1,0 +1,59 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2406                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volVectorField;
+    object      U;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+#include        "include/initialConditions"
+
+dimensions      [0 1 -1 0 0 0 0];
+
+internalField   uniform (0 0 0);
+
+boundaryField
+{
+    #includeEtc "caseDicts/setConstraintTypes"
+
+    #include "include/fixedInlet"
+
+    inlet
+    {
+        type fixedValue;
+        value uniform (-60 0 0); // Keep consistent with initialField
+    }
+    outlet
+    {
+        type zeroGradient; // Free outflow condition
+    }
+    lowerWall
+    {
+        type noSlip; // Ground no-slip condition
+    }
+    Boeing737Max8
+    {
+        type noSlip; // Aircraft surface no-slip condition
+    }
+    frontAndBack
+    {
+        type symmetryPlane; // Front and rear symmetric boundaries
+    }
+    upperWall
+    {
+        type symmetryPlane; // Upper symmetric boundary
+    }
+
+    #include "include/frontBackUpperPatches"
+}
+
+
+// ************************************************************************* //

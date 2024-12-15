@@ -1,0 +1,54 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2406                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+forceCoeffs1
+{
+    type            forceCoeffs;
+
+    libs            (forces);
+
+    writeControl    timeStep;
+    writeInterval   1;
+
+    log             yes;
+
+    patches         (Boeing737Max8);
+    rho             rhoInf;         // Use incompressible fluid model
+    rhoInf          1.225;          // Air density
+    liftDir         (0 0 1);        // Lift direction, perpendicular to the ground
+    dragDir         (1 0 0);        // Drag direction, aligned with the horizontal flow
+    CofR            (293.974 139.8183 60.2987); // Reference point, geometric center
+    pitchAxis       (0 1 0);        // Pitch rotation axis
+    magUInf         67;             // Free-stream velocity
+    lRef            150.451;        // Reference length (fuselage length)
+    Aref            6739.69;        // Reference area (projected area)
+}
+
+/*
+binField1
+{
+    type                    binField;
+    libs                    (fieldFunctionObjects);
+    binModel                singleDirectionUniformBin;
+    fields                  (forceCoeff);
+    patches                 (Boeing737Max8);
+    decomposePatchValues    true;
+    CofR                    ${../forceCoeffs1/CofR};
+
+    binData
+    {
+        nBin        20;          // output data into 20 bins
+        direction   (1 0 0);     // bin direction
+        cumulative  yes;
+    }
+    writeControl            timeStep;
+}
+*/
+
+
+// ************************************************************************* //
