@@ -116,6 +116,16 @@ To save disk space, delete the following:
 
    After applying these settings, ParaView will generate the training dataset in `.csv` format.
 
+### **Common Issue**: Missing or Invisible `Coordinates` Data  
+
+If the **`Coordinates`** entry is missing or not visible:  
+1. Go to the **Pipeline Browser** and select the `PointDatatoCellData1` layer.  
+2. In the **Properties** panel:  
+- Check and immediately uncheck **Pass Point Data**.  
+- Click **Apply** to refresh the layer.  
+
+This refreshes the data pipeline and will make the `Coordinates` entry visible for export.  
+
 ---
 
 ## **7. Expected Training Dataset Format**
@@ -153,7 +163,7 @@ Run the `cfd.py` script to train the model. This script performs the following s
 ---
 
 ## **9. Model Testing and Visualization**
-To test the trained model, run the `run.py` script.  
+To test the trained model, run the `TeslaValveFlowSimulator.py` script.  
 This script:
 - Passes **coordinate** and **time** information into the trained neural network.
 - Outputs predictions for **airflow dynamics**.
