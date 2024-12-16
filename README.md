@@ -114,7 +114,7 @@ To save disk space, delete the following:
    - Make all layers visible in the **Pipeline Browser**.
    - Select **File -> Save Data…** and choose a suitable location with the `.csv` format.
    - In the **Configure Writer** dialog, configure the following settings:
-     - Check **Write Time Steps**, **Write Time Steps Separately**, and **Choose Arrays to Write**.
+     - Check **Write Time Steps**, and **Choose Arrays to Write**.
      - Ensure all five datasets (`Coordinates`, `U`, `k`, `omega`, `p`) are selected.
      - Set **Precision** to `5`.
      - Set **Field Association** to "Cell Data".
