@@ -199,9 +199,6 @@ The visualization includes both **forward** and **reverse** flow modes, demonstr
 <p style="margin: 0; font-size: 14px; font-weight: bold;">
 Department of Computing Science
 </p>
-<p style="margin: 0; font-size: 14px; font-style: italic;">
-University of Alberta
-</p>
 <p style="margin: 0; font-size: 14px; font-weight: bold;">
 December 2024, Edmonton, AB, Canada
 </p>
