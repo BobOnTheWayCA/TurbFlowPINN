@@ -192,16 +192,18 @@ The visualization includes both **forward** and **reverse** flow modes, demonstr
 
 ---
 
-<table align="right">
-<tr>
-    <td>
-        <img src="UofAlbertalogo.svg" alt="University of Alberta Logo" width="150px">
-    </td>
-    <td style="vertical-align: middle;">
-        <p style="margin: 0; font-size: 1rem; font-weight: bold;">Department of Computing Science</p>
-        <p style="margin: 0; font-size: 1rem; font-style: italic;">University of Alberta</p>
-        <p style="margin: 0; font-size: 1rem; font-weight: bold;">December 2024, Edmonton, AB, Canada</p>
-    </td>
-</tr>
-</table>
+<div align="right">
 
+<img src="UofAlbertalogo.svg" alt="University of Alberta Logo" width="330px" style="vertical-align: middle;">
+</p>
+<p style="margin: 0; font-size: 14px; font-weight: bold;">
+Department of Computing Science
+</p>
+<p style="margin: 0; font-size: 14px; font-style: italic;">
+University of Alberta
+</p>
+<p style="margin: 0; font-size: 14px; font-weight: bold;">
+December 2024, Edmonton, AB, Canada
+</p>
+
+</div>
