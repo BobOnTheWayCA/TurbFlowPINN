@@ -6,8 +6,8 @@
 
 
 <div style="display: flex; justify-content: space-around;">
-    <img src="B38M.png" alt="alt text" width="45%"/>
-    <img src="TeslaValve.png" alt="alt text" width="45%"/>
+    <img src="B38M.png" alt="alt text" width="50%"/>
+    <img src="TeslaValve.png" alt="alt text" width="50%"/>
 </div>
 
 ---
