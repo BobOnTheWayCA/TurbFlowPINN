@@ -393,7 +393,7 @@ def main():
     print("\\*------------------------------------------------------------------------------*/")
 
     print_usage_guide()
-    model_path = 'TrainedPINNS/LeakyReLU_160M_10th_Epoch.pth' # Change to use different models
+    model_path = 'TrainedPINNS/LeakyReLU_160M_Best_Epoch.pth' # Change to use different models
     wind_tunnel_app = WindTunnelApp(model_path)
     wind_tunnel_app.show()
     app.exec_()
