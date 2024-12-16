@@ -150,14 +150,14 @@ Rerun the workflow from the `decomposePar` step onward after making these change
 ---
 
 ## **8. Model Training**
-Run the `cfd.py` script to train the model. This script performs the following steps:
+Run the `TrainPINN.py` script to train the model. This script performs the following steps:
 1. Converts `.csv` data to **HDF5** binary format for optimized storage and faster loading.
 2. Uses **Optuna** to search for the best hyperparameters on a smaller training dataset.
 3. Applies the selected hyperparameters to train the **Physics-Informed Neural Network (PINN)** on a larger dataset.
 
 ### **Training Notes**:
 - Data is read in a **forward direction** for training and in a **reverse direction** for validation.
-- Parameters like batch size and data fraction can be customized in `cfd.py`.
+- Parameters like batch size and data fraction can be customized in `TrainPINN.py`.
 - Full model training on an **NVIDIA RTX GPU** can take several days to months, depending on the batch size and dataset size. For faster convergence, use a smaller dataset (e.g., 1/80th of the full data) and moderate batch sizes (e.g., 4096).
 
 ---
