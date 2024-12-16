@@ -4,6 +4,12 @@
 
 **_A personal project by Bob Bu_**  
 
+
+<div style="display: flex; justify-content: space-around;">
+    <img src="B38M.png" alt="alt text" width="45%"/>
+    <img src="TeslaValve.png" alt="alt text" width="45%"/>
+</div>
+
 ---
 
 ## **1. Load Environment**
