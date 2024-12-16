@@ -158,8 +158,8 @@ Rerun the workflow from the `decomposePar` step onward after making these change
 ## **8. Model Training**
 Run the `TrainPINN.py` script to train the model. This script performs the following steps:
 1. Converts `.csv` data to **HDF5** binary format for optimized storage and faster loading.
-2. Uses **Optuna** to search for the best hyperparameters on a smaller training dataset.
-3. Applies the selected hyperparameters to train the **Physics-Informed Neural Network (PINN)** on a larger dataset.
+2. Initializes hyperparameters such as learning rate, batch size, and PDE loss weights, which are dynamically adjusted during training.
+3. Trains the **Physics-Informed Neural Network (PINN)** on the selected dataset.
 
 ### **Training Notes**:
 - Data is read in a **forward direction** for training and in a **reverse direction** for validation.
