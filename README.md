@@ -5,9 +5,9 @@
 **_A personal project by Bob Bu_**  
 
 
-<div style="display: flex; justify-content: space-around;">
-    <img src="B38M.png" alt="alt text" width="45%"/>
-    <img src="TeslaValve.png" alt="alt text" width="45%"/>
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="B38M.png" alt="Boeing 737" style="width: 48%; height: auto;"/>
+    <img src="TeslaValve.png" alt="Tesla Valve" style="width: 48%; height: auto;"/>
 </div>
 
 ---
