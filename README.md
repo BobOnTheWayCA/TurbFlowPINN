@@ -194,8 +194,13 @@ The visualization includes both **forward** and **reverse** flow modes, demonstr
 
 ---
 
-**Department of Computing Science**  
-*University of Alberta*  
-**December 2024, Edmonton, AB, Canada**
+<div style="display: flex; align-items: center; justify-content: flex-end;">
+    <img src="UofAlbertalogo.svg" alt="University of Alberta Logo" style="width: 250px; height: auto; margin-right: 20px;">
+    <div>
+        <p style="margin: 0; font-size: 1rem; font-weight: bold;">Department of Computing Science</p>
+        <p style="margin: 0; font-size: 1rem; font-style: italic;">University of Alberta</p>
+        <p style="margin: 0; font-size: 1rem; font-weight: bold;">December 2024, Edmonton, AB, Canada</p>
+    </div>
+</div>
 
 ---
