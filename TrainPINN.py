@@ -244,8 +244,8 @@ def main():
     print("\\*------------------------------------------------------------------------------*/")
 
     # Main training routine
-    csv_file_path = 'training_dataset/dataset.csv'
-    hdf5_file_path = 'training_dataset/dataset.h5'
+    csv_file_path = 'TrainingDataset/dataset.csv'
+    hdf5_file_path = 'TrainingDataset/dataset.h5'
     model_save_path = 'pinn_model.pth'
     best_model_path = 'pinn_best_model.pth'
 
